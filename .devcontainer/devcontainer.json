@@ -13,6 +13,8 @@
         "--security-opt=no-new-privileges",
         "--security-opt=apparmor:docker-default"
     ],
+    "remoteUser": "auditor", // is set as default in the image, but just to be explicit
+    "updateRemoteUserUID": false, // linux-specific setting as otherwise the UID of the mounted folder might mismatch the container user. Try setting this to true if it doesn't work by default.
     // Configure tool-specific properties.
     "customizations": {
         // Configure properties specific to VS Code.
