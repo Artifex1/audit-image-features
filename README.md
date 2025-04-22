@@ -10,6 +10,8 @@ For each of the following features, see `src/*/README.md` for details:
 - Noir circuit language
 - Circom
 - Echidna
+- Halmos
+- Medusa
 - _more to come_
 
 Additional features will be added to this repository to support a wider range of development workflows.
